@@ -15,9 +15,6 @@ if (mainHasRedirect) {
     return;
 }
 
-
-// If no 'redirect' class is found in main, continue with the script...
-// Your original code for adding the jf_iframe goes here
 // Get all the submit buttons
 var submitButtons = document.querySelectorAll('.form-submit-button');
 
@@ -53,6 +50,10 @@ Array.from(mainForms).forEach(function(form, formIndex) {
             // Once the iframe is loaded, hide the form and show the iframe
             formContainer.style.display = 'none';
             iframe.style.display = 'block';
+
+            // Make the iframe focusable and give it focus
+            iframe.setAttribute('tabIndex', '-1');
+            iframe.focus();
 
             // Change the text of all buttons back to their original state
             submitButtons.forEach((button, index) => {
