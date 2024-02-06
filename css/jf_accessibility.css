@@ -1,0 +1,28 @@
+/* required */
+
+.jotform-form .form-required:before {
+    content : '(Required)';
+    visibility : visible;
+}
+
+.jotform-form .form-label, .form-required {
+    color : white !important;
+}
+
+/* accessibility */
+.jotform-form .a11y_requirement_desc_line {
+    margin-top : 0 !important;
+    display : none;
+}
+
+.jotform-form .a11y-error-container, .a11y_requirement_desc_line {
+    padding : 0 48px;
+}
+
+.jotform-form .error-navigation-message {
+    padding : 0 2px;
+}
+
+.jotform-form .form-required {
+    visibility : hidden;
+}

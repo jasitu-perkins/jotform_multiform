@@ -1,0 +1,7 @@
+.jf_iframe {
+    display: none;
+    width: 100%; /* Set width to 100% of parent */
+    height: 100%; /* Set height to 100% of parent */
+    min-height: 500px;
+    border: 0;
+}
