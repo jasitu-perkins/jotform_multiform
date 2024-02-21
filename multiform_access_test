@@ -15,6 +15,9 @@
     visibility : visible;
 }
 
+.form-required {
+color: black;
+}
 
 /* accessibility */
 .jotform-form .a11y_requirement_desc_line {
